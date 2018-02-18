@@ -12,6 +12,8 @@ namespace TravelNetwork.DbContext
     {
         public ApplicationDbContext()
             : base("TravelNetwork-DevtConnection", throwIfV1Schema: false)
+            //: base("TravelNetwork-Production", throwIfV1Schema: false)
+
         {
         }
 

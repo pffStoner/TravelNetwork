@@ -49,9 +49,8 @@ namespace TravelNetwork.Gateway.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Userame")]
+        public string Userame { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +63,10 @@ namespace TravelNetwork.Gateway.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Userame")]
+        public string Userame { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
